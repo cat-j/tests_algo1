@@ -63,6 +63,14 @@ bool sonAnagramas (int a[], int n, int b[], int m) {
 	int cantidades_a[256];
 	int cantidades_b[256];
 
+	int h = 0;
+
+	while (h<256) {
+		cantidades_a[h] = 0;
+		cantidades_b[h] = 0;
+		h++;
+	}
+
 	while (i<n) {
 		int actual_a = a[i];
 		int actual_b = b[i];
